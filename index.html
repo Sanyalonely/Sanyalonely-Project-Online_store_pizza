@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Піцерія - Картка товару</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍕 Інтернет-магазин "Піца у тебе вдома" 🍕</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="items-column">
+            <h2>Наші Піци</h2>
+
+            <div class="item-card card" data-id="1">
+                <img src="pizza\pizzamargarita.png" alt="Піца Маргарита" class="item-image product-img">
+
+                <div class="details-wrapper">
+                    <h3 class="item-title">Піца "Маргарита"</h3>
+                    <p class="item-description">Класична піца з моцарелою та томатами. <span data-items-in-box>1 шт.</span> / <span class="price_weight">300 г</span></p>
+
+                    <div class="item-bottom">
+                        <div class="item-price"><span class="price_currency">130</span> грн</div>
+                        <div class="items counter-wrapper">
+                            <div class="items_control" data-action="minus">-</div>
+                            <div class="items_current" data-counter>1</div>
+                            <div class="items_control" data-action="plus">+</div>
+                        </div>
+                    </div>
+
+                    <button data-cart type="button" class="btn btn-add-cart">+ У кошик</button>
+                </div>
+            </div>
+
+            <div class="item-card card" data-id="2">
+                <img src="pizza\pizza4chees.png" alt="Піца 4 сира" class="item-image product-img">
+                <div class="details-wrapper">
+                    <h3 class="item-title">Піца "4 сира"</h3>
+                    <p class="item-description">Піца з 4 різними видами сиру. <span data-items-in-box>1 шт.</span> / <span class="price_weight">350 г</span></p>
+
+                    <div class="item-bottom">
+                        <div class="item-price"><span class="price_currency">180</span> грн</div>
+                        <div class="items counter-wrapper">
+                            <div class="items_control" data-action="minus">-</div>
+                            <div class="items_current" data-counter>1</div>
+                            <div class="items_control" data-action="plus">+</div>
+                        </div>
+                    </div>
+                    <button data-cart type="button" class="btn btn-add-cart">+ У кошик</button>
+                </div>
+            </div>
+
+            <div class="item-card card" data-id="3">
+                <img src="pizza\pizzapepperoni.png" alt="Піца Пепероні" class="item-image product-img">
+                <div class="details-wrapper">
+                    <h3 class="item-title">Піца "Пепероні"</h3>
+                    <p class="item-description">Піца з сиром моцарела і ковбасками. <span data-items-in-box>1 шт.</span> / <span class="price_weight">320 г</span></p>
+
+                    <div class="item-bottom">
+                        <div class="item-price"><span class="price_currency">140</span> грн</div>
+                        <div class="items counter-wrapper">
+                            <div class="items_control" data-action="minus">-</div>
+                            <div class="items_current" data-counter>1</div>
+                            <div class="items_control" data-action="plus">+</div>
+                        </div>
+                    </div>
+                    <button data-cart type="button" class="btn btn-add-cart">+ У кошик</button>
+                </div>
+            </div>
+
+            <div class="item-card card" data-id="4">
+                <img src="pizza/pizzahunt.png" alt="Піца Мисливська" class="item-image product-img">
+                <div class="details-wrapper">
+                    <h3 class="item-title">Піца "Мисливська"</h3>
+                    <p class="item-description">Піца з копченими ковбасками, сиром гауда, помідорами, часником і базиликом. <span data-items-in-box>1 шт.</span> / <span class="price_weight">360 г</span></p>
+
+                    <div class="item-bottom">
+                        <div class="item-price"><span class="price_currency">170</span> грн</div>
+                        <div class="items counter-wrapper">
+                            <div class="items_control" data-action="minus">-</div>
+                            <div class="items_current" data-counter>1</div>
+                            <div class="items_control" data-action="plus">+</div>
+                        </div>
+                    </div>
+                    <button data-cart type="button" class="btn btn-add-cart">+ У кошик</button>
+                </div>
+            </div>
+
+            <div class="item-card card" data-id="5">
+                <img src="pizza/pizzafirmova.png" alt="Піца Фірмова" class="item-image product-img">
+                <div class="details-wrapper">
+                    <h3 class="item-title">Піца "Фірмова"</h3>
+                    <p class="item-description">Піца з сиром гауда, моцарела, з курячим філе, грибами й оливками. <span data-items-in-box>1 шт.</span> / <span class="price_weight">400 г</span></p>
+
+                    <div class="item-bottom">
+                        <div class="item-price"><span class="price_currency">200</span> грн</div>
+                        <div class="items counter-wrapper">
+                            <div class="items_control" data-action="minus">-</div>
+                            <div class="items_current" data-counter>1</div>
+                            <div class="items_control" data-action="plus">+</div>
+                        </div>
+                    </div>
+                    <button data-cart type="button" class="btn btn-add-cart">+ У кошик</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cart-column">
+            <h2>Кошик</h2>
+            <div class="cart-content">
+                <div class="cart-wrapper">
+                </div>
+
+                <div class="alert alert-warning" role="alert" data-cart-empty>
+                    Ваш кошик поки що порожній.
+                </div>
+
+                <div class="cart-footer">
+                    <div class="total-price-wrapper">
+                        <p>Доставка: <span class="delivery-cost">Безкоштовно</span></p>
+                        <p class="total">До сплати: <span class="total-price">0</span> грн</p>
+                    </div>
+
+                    <div class="order-form-wrapper none">
+                        <h3>Оформити замовлення</h3>
+                        <input type="text" placeholder="Ваш номер телефону" class="phone-input">
+                        <button class="btn btn-order-submit">ЗАМОВИТИ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
